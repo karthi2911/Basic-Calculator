@@ -3,7 +3,7 @@ inputLabel.value = "0";
 
 function calculate(event) {
   var number = event.innerHTML;
-  console.log(number);
+  //console.log(number);
 
   if (number == "=") {
     inputLabel.value = eval(inputLabel.value);
@@ -28,7 +28,7 @@ var i = 0;
 function numIncrement() {
   var incrementnum = document.getElementById("number").value;
   i += 1;
-  console.log(incrementnum);
+  //console.log(incrementnum);
   document.getElementById("number").value = i;
   if (incrementnum == "14") {
     document.getElementById("btnDisabled").disabled = true;
