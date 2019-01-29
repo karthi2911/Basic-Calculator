@@ -15,6 +15,8 @@ function calculate(event) {
     inputLabel.value += number;
   }
 }
+
+/* clicks esc button */
 document.addEventListener("keydown", function(event) {
   if (event.keyCode == 27) {
     inputLabel.value = "0";
