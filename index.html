@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Form Validation - JS</title>
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Simple Basic Calculator</h1>
+      <table border="1" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="4">
+            <input type="text" id="inputLabel" onClick="GetActive();" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" align="left">
+            <button onClick="calculate(this);">AC</button>
+          </td>
+          <td><button onClick="calculate(this);">/</button></td>
+        </tr>
+        <tr>
+          <td><button onClick="calculate(this);">7</button></td>
+          <td><button onClick="calculate(this);">8</button></td>
+          <td><button onClick="calculate(this);">9</button></td>
+          <td><button onClick="calculate(this);">*</button></td>
+        </tr>
+        <tr>
+          <td><button onClick="calculate(this);">4</button></td>
+          <td><button onClick="calculate(this);">5</button></td>
+          <td><button onClick="calculate(this);">6</button></td>
+          <td><button onClick="calculate(this);">-</button></td>
+        </tr>
+        <tr>
+          <td><button onClick="calculate(this);">1</button></td>
+          <td><button onClick="calculate(this);">2</button></td>
+          <td><button onClick="calculate(this);">3</button></td>
+          <td><button onClick="calculate(this);">+</button></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button onClick="calculate(this);">0</button></td>
+          <td><button onClick="calculate(this);">.</button></td>
+          <td><button onClick="calculate(this);">=</button></td>
+        </tr>
+      </table>
+
+      <div class="numberIncrement">
+        <h1>Number Increment</h1>
+        <button id="btnDisabled" onClick="numIncrement();">Click Me</button>
+        <input type="text" id="number" />
+        <p id="text"></p>
+      </div>
+    </div>
+    <script src="assets/js/calc.js"></script>
+  </body>
+</html>
